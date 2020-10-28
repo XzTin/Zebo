@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <img src="images/logozebo.png" alt="LogoZebo" width="75" height="75">
+            <div class="toggle"onclick="toggle();"></div>
+        </header>
+        <div class="content">
+            <div class="contentBx">
+                <h2>FUTURE ON<br>YOUR HAND</h2>
+                <p>ZEBO đi cùng bạn</p>
+                <a href="#">See Now</a>
+            </div>
+            <div class="imgBx">
+                <img src="images/cloudsky.png">
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function toggle(){
+            const toggle =  document.querySelector('.toggle');
+            const banner =  document.querySelector('.banner');
+            toggle.classList.toggle('active')
+            banner.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
